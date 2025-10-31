@@ -15,7 +15,7 @@ void find_src(string root, vector<string> &files, string file) {
         } 
         else if (file.path().extension() == ".cpp" || file.path().extension() == ".h") {
             files.push_back("\"" + path + "\"");
-            cout << "<< " << path.replace(0, root.length(), "") << endl;
+            cout << "<< " << path.replace(0, root.length() + 1, "") << endl;
         }
     }
 }
