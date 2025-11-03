@@ -35,7 +35,7 @@ int main(int argc, char* argv[]) {
 
     find_src(current, files, current);
 
-    string target = argc == 1 ? "unnamed_application" : argv[1];
+    string target = argc == 1 ? "a" : argv[1];
     string command = construct_command(files, target);
     cout << command << endl;
     system(command.c_str());
